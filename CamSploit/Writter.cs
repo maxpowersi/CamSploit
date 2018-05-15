@@ -23,17 +23,17 @@ namespace CamSploit
 
         public void TestFailed(string cve, Camera cam)
         {
-            Console.WriteLine("The Cam {0} is not vulnerable or it is not available for the {1}", cve, cam.Address);
+            Console.WriteLine("The Cam {0} is not vulnerable or it is not available for the {1}", cam.Address, cve);
             if (_txtFile != null)
-                _txtFile.Write(cam.ToString());
+                _txtFile.Write(cam.ToString() + ",null,null," + cve);
 
         }
 
         public void TestSuccess(string cve, Camera cam , Credencial cred)
         {
-            Console.WriteLine("The Cam {0} is vulnerbale to {1} the result is {2}", cve, cam.Address, cred.ToString());
+            Console.WriteLine("The Cam {0} is vulnerbale to {1} the result is {2}", cam.Address, cve, cred.ToString());
             if (_txtFile != null)
-                _txtFile.Write("");
+                _txtFile.Write(cam.ToString() + "," + cred.Username + "," + cred.Password + "," + cve);
         }
 
         public void Dispose()
@@ -46,6 +46,5 @@ namespace CamSploit
             _txtFile = new TxtFile(output);
             _txtFile.Create();
         }
-
     }
 }

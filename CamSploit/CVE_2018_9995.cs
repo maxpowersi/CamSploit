@@ -31,7 +31,7 @@ namespace CamSploit
 
 				return new Credencial(username, pass);
 			}
-			catch(System.Net.WebException ex)
+			catch(WebException)
 			{
 				return null;
 			}
