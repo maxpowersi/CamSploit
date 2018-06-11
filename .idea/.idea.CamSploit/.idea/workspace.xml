@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3823dea-aece-4036-88d4-bc8992ebdfa7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/CamSploit/CamLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/CVE_2018_9995.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/CVE_2018_9995.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/CamSploit.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/CamSploit.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/ShodanHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/ShodanHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/TxtFile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/TxtFile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/Writter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/Writter.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +46,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -65,7 +57,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -73,23 +64,19 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="CamSploit (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CamSploit (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="CamSploit" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CamSploit/Lib/Shodan.Net.dll" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BrutusBunny/BrutusBunny.sln" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -131,11 +118,13 @@
       <updated>1526395732307</updated>
       <workItem from="1526395734605" duration="35000" />
       <workItem from="1526409970148" duration="2281000" />
+      <workItem from="1526413566406" duration="29000" />
+      <workItem from="1528474529465" duration="1191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2316000" />
+    <option name="totallyTimeSpent" value="3536000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -147,30 +136,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Unit Tests" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20202559" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13539445" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Build" visible="true" weight="0.32900432" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Build" order="8" visible="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -191,12 +180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <marker date="1526350225000" expanded="true" signature="19:654" ph="{...}" />
-            <marker date="1526350225000" expanded="true" signature="42:652" ph="{...}" />
-            <marker date="1526350225000" expanded="true" signature="88:128" ph="{...}" />
-            <marker date="1526350225000" expanded="true" signature="523:646" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -204,19 +187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="896">
           <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-          <folding>
-            <marker date="1526410104669" expanded="false" signature="6:56" ph="..." />
-            <marker date="1526410104669" expanded="true" signature="77:1241" ph="{...}" />
-            <marker date="1526410104669" expanded="true" signature="118:1239" ph="{...}" />
-            <marker date="1526410104669" expanded="true" signature="289:335" ph="{...}" />
-            <marker date="1526410104669" expanded="true" signature="365:439" ph="{...}" />
-            <marker date="1526410104669" expanded="true" signature="479:543" ph="{...}" />
-            <marker date="1526410104669" expanded="true" signature="571:644" ph="{...}" />
-            <marker date="1526410104669" expanded="true" signature="678:743" ph="{...}" />
-            <marker date="1526410104669" expanded="true" signature="772:1019" ph="{...}" />
-            <marker date="1526410104669" expanded="true" signature="901:1009" ph="{...}" />
-            <marker date="1526410104669" expanded="true" signature="1050:1233" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -231,15 +201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="14" column="67" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="67" />
-          <folding>
-            <marker date="1526410124069" expanded="false" signature="6:71" ph="..." />
-            <marker date="1526410124069" expanded="true" signature="92:1068" ph="{...}" />
-            <marker date="1526410124069" expanded="true" signature="132:1066" ph="{...}" />
-            <marker date="1526410124069" expanded="true" signature="181:914" ph="{...}" />
-            <marker date="1526410124069" expanded="true" signature="470:860" ph="{...}" />
-            <marker date="1526410124069" expanded="true" signature="646:811" ph="{...}" />
-            <marker date="1526410124069" expanded="true" signature="883:910" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -247,19 +208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <marker date="1526411654786" expanded="false" signature="6:78" ph="..." />
-            <marker date="1526411654786" expanded="true" signature="99:1570" ph="{...}" />
-            <marker date="1526411654786" expanded="true" signature="135:1568" ph="{...}" />
-            <marker date="1526411654786" expanded="true" signature="217:660" ph="{...}" />
-            <marker date="1526411654786" expanded="true" signature="280:650" ph="{...}" />
-            <marker date="1526411654786" expanded="true" signature="409:605" ph="{...}" />
-            <marker date="1526411654786" expanded="true" signature="751:1399" ph="{...}" />
-            <marker date="1526411654786" expanded="true" signature="825:1389" ph="{...}" />
-            <marker date="1526411654786" expanded="true" signature="931:1338" ph="{...}" />
-            <marker date="1526411654786" expanded="true" signature="1095:1280" ph="{...}" />
-            <marker date="1526411654786" expanded="true" signature="1487:1554" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -267,14 +215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-          <folding>
-            <marker date="1526411717883" expanded="true" signature="54:1350" ph="{...}" />
-            <marker date="1526411717883" expanded="true" signature="85:1348" ph="{...}" />
-            <marker date="1526411717883" expanded="true" signature="122:976" ph="{...}" />
-            <marker date="1526411717883" expanded="true" signature="221:966" ph="{...}" />
-            <marker date="1526411717883" expanded="true" signature="813:952" ph="{...}" />
-            <marker date="1526411717883" expanded="true" signature="1051:1345" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -282,12 +222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <marker date="1526350225000" expanded="true" signature="19:409" ph="{...}" />
-            <marker date="1526350225000" expanded="true" signature="49:407" ph="{...}" />
-            <marker date="1526350225000" expanded="true" signature="115:201" ph="{...}" />
-            <marker date="1526350225000" expanded="true" signature="336:401" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -295,17 +229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="784">
           <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <marker date="1526412226129" expanded="true" signature="34:1284" ph="{...}" />
-            <marker date="1526412226129" expanded="true" signature="75:1282" ph="{...}" />
-            <marker date="1526412226129" expanded="true" signature="141:162" ph="{...}" />
-            <marker date="1526412226129" expanded="true" signature="205:255" ph="{...}" />
-            <marker date="1526412226129" expanded="true" signature="309:405" ph="{...}" />
-            <marker date="1526412226129" expanded="true" signature="461:703" ph="{...}" />
-            <marker date="1526412226129" expanded="true" signature="778:1056" ph="{...}" />
-            <marker date="1526412226129" expanded="true" signature="1087:1139" ph="{...}" />
-            <marker date="1526412226129" expanded="true" signature="1181:1276" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -313,23 +236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="26" column="102" selection-start-line="26" selection-start-column="102" selection-end-line="26" selection-end-column="102" />
-          <folding>
-            <marker date="1526350225000" expanded="true" signature="19:654" ph="{...}" />
-            <marker date="1526350225000" expanded="true" signature="42:652" ph="{...}" />
-            <marker date="1526350225000" expanded="true" signature="88:128" ph="{...}" />
-            <marker date="1526350225000" expanded="true" signature="523:646" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CamSploit/ShodanHelper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1526412244107" expanded="true" signature="45:357" ph="{...}" />
-            <marker date="1526412244107" expanded="true" signature="84:355" ph="{...}" />
-            <marker date="1526412244107" expanded="true" signature="153:349" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
