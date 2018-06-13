@@ -2,7 +2,7 @@
 CamSploit is distributed under the GNU GPLv3 license.
 ## Usage
 ```
-coming soon
+CamSploit  soon
 ```
 ## Example
 ```

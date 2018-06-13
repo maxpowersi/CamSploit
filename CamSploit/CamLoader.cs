@@ -47,9 +47,9 @@ namespace CamSploit
             }
         }
         
-        public static IEnumerable<Camera> LoadFromHost(string ip, string port)
+        public static IEnumerable<Camera> LoadFromHost(string ipPort)
         {
-            yield return new Camera(ip, port);
+            yield return new Camera(ipPort.Split(':')[0], ipPort.Split(':')[1]);
         }        
     }
 }

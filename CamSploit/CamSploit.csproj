@@ -31,6 +31,9 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommandLine, Version=2.2.1.0, Culture=neutral, PublicKeyToken=de6f01bd326f8c32">
+      <HintPath>Lib\CommandLine.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
       <HintPath>Lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -42,15 +45,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CamLoader.cs" />
+    <Compile Include="CVEs\CVE_2018_9995.cs" />
+    <Compile Include="ErrorException.cs" />
+    <Compile Include="ExploitHelper.cs" />
     <Compile Include="IExploit.cs" />
+    <Compile Include="InputType.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="Phrases.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Credencial.cs" />
     <Compile Include="ShodanHelper.cs" />
     <Compile Include="Camera.cs" />
-    <Compile Include="CVE_2018_9995.cs" />
     <Compile Include="TxtFile.cs" />
     <Compile Include="Writter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\README.md">
+      <Link>README.md</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

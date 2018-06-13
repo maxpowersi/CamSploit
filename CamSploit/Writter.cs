@@ -6,11 +6,6 @@ namespace CamSploit
     {
         private TxtFile _txtFile;
 
-        public Writter()
-        {
-
-        }
-
         public Writter(string outputPath)
         {
             Init(outputPath);
@@ -25,7 +20,7 @@ namespace CamSploit
         {
             Console.WriteLine("The Cam {0} is not vulnerable or it is not available for the {1}", cam.Address, cve);
             if (_txtFile != null)
-                _txtFile.Write(cam.ToString() + ",null,null," + cve);
+                _txtFile.Write(cam.ToString() + ",,," + cve);
 
         }
 

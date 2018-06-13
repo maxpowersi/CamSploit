@@ -3,7 +3,7 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace CamSploit
+namespace CamSploit.CVEs
 {
 	public class CVE_2018_9995 :IExploit
 	{
@@ -19,8 +19,8 @@ namespace CamSploit
 			{
 				var response = (HttpWebResponse) request.GetResponse();
 
-				var username = "";
-				var pass = "";
+				string username, pass;
+
 				using (var sr = new StreamReader(response.GetResponseStream()))
 				{
 					var text = sr.ReadToEnd();
@@ -38,7 +38,9 @@ namespace CamSploit
 		}
 
         public string ShodanSearchQuery { get { return "Server: GNU rsp/1.0"; } }
+		
+		public string Description { get { return "CVE-2018-9995 description"; } }
 
-        public string CVE { get { return "CVE-2018-9995"; } }
+        public string CommonName { get { return "CVE-2018-9995"; } }
     }
 }

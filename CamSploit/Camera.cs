@@ -12,7 +12,7 @@
 
 		public string Port { get; set; }
 
-        public string UrlHTTP { get { return "http://" + Host + ":" + Port; } }
+        public string UrlHttp { get { return "http://" + Host + ":" + Port; } }
 
 		public string Address { get { return Host + ":" + Port; } }
 
@@ -24,7 +24,7 @@
 
         public override string ToString()
         {
-            return Host + "," + Port + "," + UrlHTTP + "," + Description + "," + Country + "," + City;
+            return Host + "," + Port + "," + UrlHttp + "," + Description + "," + Country + "," + City;
         }
     }
 }
