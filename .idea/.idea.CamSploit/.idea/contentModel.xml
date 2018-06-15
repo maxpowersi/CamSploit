@@ -13,8 +13,8 @@
           <e p="CVE_2018_9995.cs" t="Include" />
         </e>
         <e p="ErrorException.cs" t="Include" />
+        <e p="Exploit.cs" t="Include" />
         <e p="ExploitHelper.cs" t="Include" />
-        <e p="IExploit.cs" t="Include" />
         <e p="InputType.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Options.cs" t="Include" />

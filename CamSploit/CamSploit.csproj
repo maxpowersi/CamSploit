@@ -48,7 +48,7 @@
     <Compile Include="CVEs\CVE_2018_9995.cs" />
     <Compile Include="ErrorException.cs" />
     <Compile Include="ExploitHelper.cs" />
-    <Compile Include="IExploit.cs" />
+    <Compile Include="Exploit.cs" />
     <Compile Include="InputType.cs" />
     <Compile Include="Options.cs" />
     <Compile Include="Phrases.cs" />

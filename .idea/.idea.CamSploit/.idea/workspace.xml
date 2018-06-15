@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c3823dea-aece-4036-88d4-bc8992ebdfa7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/CVEs/CVE_2018_9995.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/CVEs/CVE_2018_9995.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/ExploitHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/ExploitHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/IExploit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/IExploit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/Options.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/Options.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/obj/x86/Debug/CamSploit.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/obj/x86/Debug/CamSploit.csprojResolveAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,21 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IExploit.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CamSploit/IExploit.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding>
-                <marker date="1529067315793" expanded="true" signature="19:284" ph="{...}" />
-                <marker date="1529067315793" expanded="true" signature="55:282" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,13 +55,13 @@
         <option value="$PROJECT_DIR$/CamSploit/Properties/AssemblyInfo.cs" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/CamSploit/InputType.cs" />
-        <option value="$PROJECT_DIR$/CamSploit/Phrases.cs" />
         <option value="$PROJECT_DIR$/CamSploit/ErrorException.cs" />
         <option value="$PROJECT_DIR$/CamSploit/Options.cs" />
         <option value="$PROJECT_DIR$/CamSploit/ExploitHelper.cs" />
-        <option value="$PROJECT_DIR$/CamSploit/Program.cs" />
         <option value="$PROJECT_DIR$/CamSploit/CVEs/CVE_2018_9995.cs" />
         <option value="$PROJECT_DIR$/CamSploit/IExploit.cs" />
+        <option value="$PROJECT_DIR$/CamSploit/Phrases.cs" />
+        <option value="$PROJECT_DIR$/CamSploit/Program.cs" />
       </list>
     </option>
   </component>
@@ -173,12 +153,12 @@
       <workItem from="1528824210005" duration="6411000" />
       <workItem from="1528838380838" duration="3000" />
       <workItem from="1528838891564" duration="15443000" />
-      <workItem from="1529066982107" duration="333000" />
+      <workItem from="1529066982107" duration="1584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25726000" />
+    <option name="totallyTimeSpent" value="26977000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -191,7 +171,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
@@ -261,23 +240,23 @@
         <state relative-caret-position="896">
           <caret line="69" column="56" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="56" />
           <folding>
-            <marker date="1529067140981" expanded="false" signature="6:107" ph="..." />
-            <marker date="1529067140981" expanded="true" signature="128:2153" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="159:2151" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="196:462" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="207:287" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="316:373" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="397:458" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="507:1128" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="654:1124" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="739:1119" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="785:1113" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="843:1106" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="1188:1565" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="1224:1561" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="1646:1788" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="1849:2148" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="1969:2115" ph="{...}" />
+            <marker date="1529067337119" expanded="false" signature="6:107" ph="..." />
+            <marker date="1529067337119" expanded="true" signature="128:2149" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="159:2147" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="196:462" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="207:287" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="316:373" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="397:458" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="507:1124" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="654:1120" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="739:1115" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="785:1109" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="843:1102" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="1184:1561" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="1220:1557" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="1642:1784" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="1845:2144" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="1965:2111" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -422,13 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CamSploit/Phrases.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="79" lean-forward="true" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CamSploit/ErrorException.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -448,32 +420,6 @@
             <marker date="1529067132617" expanded="true" signature="322:401" ph="{...}" />
             <marker date="1529067132617" expanded="true" signature="470:534" ph="{...}" />
             <marker date="1529067132617" expanded="true" signature="631:728" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CamSploit/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-          <folding>
-            <marker date="1529067140981" expanded="false" signature="6:107" ph="..." />
-            <marker date="1529067140981" expanded="true" signature="128:2153" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="159:2151" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="196:462" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="207:287" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="316:373" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="397:458" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="507:1128" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="654:1124" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="739:1119" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="785:1113" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="843:1106" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="1188:1565" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="1224:1561" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="1646:1788" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="1849:2148" ph="{...}" />
-            <marker date="1529067140981" expanded="true" signature="1969:2115" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -515,6 +461,43 @@
           <folding>
             <marker date="1529067315793" expanded="true" signature="19:284" ph="{...}" />
             <marker date="1529067315793" expanded="true" signature="55:282" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CamSploit/Phrases.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1529067325831" expanded="true" signature="19:331" ph="{...}" />
+            <marker date="1529067325831" expanded="true" signature="53:329" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CamSploit/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <marker date="1529067337119" expanded="false" signature="6:107" ph="..." />
+            <marker date="1529067337119" expanded="true" signature="128:2149" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="159:2147" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="196:462" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="207:287" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="316:373" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="397:458" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="507:1124" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="654:1120" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="739:1115" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="785:1109" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="843:1102" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="1184:1561" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="1220:1557" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="1642:1784" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="1845:2144" ph="{...}" />
+            <marker date="1529067337119" expanded="true" signature="1965:2111" ph="{...}" />
           </folding>
         </state>
       </provider>
