@@ -26,6 +26,7 @@
         <e p="Exploit.cs" t="Include" />
         <e p="ExploitHelper.cs" t="Include" />
         <e p="ExploitMaker.csproj" t="IncludeRecursive" />
+        <e p="HttpRequester.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="net472" t="Include">

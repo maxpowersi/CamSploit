@@ -2,8 +2,7 @@
 
 namespace CamSploit
 {
-    public  class ErrorException : Exception
+    public class ErrorException : Exception
     {
-        
     }
 }
