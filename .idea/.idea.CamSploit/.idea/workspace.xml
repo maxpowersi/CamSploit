@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e851ea2b-2003-4f56-bdb0-8f75ba57cd43" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ExploitMaker/HttpRequester.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exploits/CVE_2018_9995.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Exploits/CVE_2018_9995.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,19 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HttpRequester.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ExploitMaker/HttpRequester.cs">
+      <file leaf-file-name="ExploitHelper.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ExploitMaker/ExploitHelper.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state relative-caret-position="612">
+              <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
               <folding>
-                <marker date="1529089325615" expanded="true" signature="6:71" ph="..." />
-                <marker date="1529089325615" expanded="true" signature="95:1118" ph="{...}" />
-                <marker date="1529089325615" expanded="true" signature="135:1116" ph="{...}" />
-                <marker date="1529089325615" expanded="true" signature="186:1110" ph="{...}" />
-                <marker date="1529089325615" expanded="true" signature="547:1011" ph="{...}" />
-                <marker date="1529089325615" expanded="true" signature="850:997" ph="{...}" />
-                <marker date="1529089325615" expanded="true" signature="1043:1100" ph="{...}" />
+                <marker date="1529096126900" expanded="true" signature="6:108" ph="..." />
+                <marker date="1529096126900" expanded="true" signature="132:1703" ph="{...}" />
+                <marker date="1529096126900" expanded="true" signature="172:1701" ph="{...}" />
+                <marker date="1529096126900" expanded="true" signature="278:889" ph="{...}" />
+                <marker date="1529096126900" expanded="true" signature="619:879" ph="{...}" />
+                <marker date="1529096126900" expanded="true" signature="959:1034" ph="{...}" />
+                <marker date="1529096126900" expanded="true" signature="1087:1166" ph="{...}" />
+                <marker date="1529096126900" expanded="true" signature="1227:1291" ph="{...}" />
+                <marker date="1529096126900" expanded="true" signature="1380:1451" ph="{...}" />
+                <marker date="1529096126900" expanded="true" signature="1505:1695" ph="{...}" />
+                <marker date="1529096126900" expanded="true" signature="1531:1685" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -41,16 +42,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ExploitMaker/ExploitHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ExploitMaker/TxtFile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ExploitMaker/Credencial.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ExploitMaker/HttpRequester.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CamSploit/Writter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ExploitMaker/Camera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CamSploit/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ExploitMaker/ShodanHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CamSploit/Options.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ExploitMaker/CamLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ExploitMaker/TxtFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ExploitMaker/Credencial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Exploits/CVE_2018_9995.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ExploitMaker/HttpRequester.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CamSploit/Writter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ExploitMaker/Camera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ExploitMaker/Exploit.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -58,7 +59,6 @@
       <list>
         <option value="$PROJECT_DIR$/Exploits/Class1.cs" />
         <option value="$PROJECT_DIR$/CamSploit/Exploits/Exploit.cs" />
-        <option value="$PROJECT_DIR$/ExploitMaker/Exploit.cs" />
         <option value="$PROJECT_DIR$/ExploitMaker/Credencial.cs" />
         <option value="$PROJECT_DIR$/Camsploitx/Program.cs" />
         <option value="$PROJECT_DIR$/CamSploit/Program.cs" />
@@ -68,10 +68,11 @@
         <option value="$PROJECT_DIR$/ExploitMaker/Camera.cs" />
         <option value="$PROJECT_DIR$/ExploitMaker/TxtFile.cs" />
         <option value="$PROJECT_DIR$/ExploitMaker/CamLoader.cs" />
-        <option value="$PROJECT_DIR$/ExploitMaker/ExploitHelper.cs" />
         <option value="$PROJECT_DIR$/ExploitMaker/Requester.cs" />
         <option value="$PROJECT_DIR$/ExploitMaker/HttpRequester.cs" />
         <option value="$PROJECT_DIR$/Exploits/CVE_2018_9995.cs" />
+        <option value="$PROJECT_DIR$/ExploitMaker/Exploit.cs" />
+        <option value="$PROJECT_DIR$/ExploitMaker/ExploitHelper.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -124,6 +124,7 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,7 +174,8 @@
       <workItem from="1529082814067" duration="110000" />
       <workItem from="1529083104264" duration="324000" />
       <workItem from="1529084095743" duration="474000" />
-      <workItem from="1529084603177" duration="4853000" />
+      <workItem from="1529084603177" duration="5068000" />
+      <workItem from="1529092570095" duration="2721000" />
     </task>
     <task id="LOCAL-00001" summary="New architecture created">
       <created>1529087643945</created>
@@ -182,11 +184,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529087643945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New architecture created">
+      <created>1529089924926</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1529089924926</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5761000" />
+    <option name="totallyTimeSpent" value="8697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -208,13 +217,12 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14978679" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="8" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32900432" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -222,33 +230,34 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33208954" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Unit Tests" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32900432" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Build" order="14" visible="true" weight="0.32900432" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="14" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,20 +273,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="New architecture created" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Exploits/Class1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExploitMaker/Class1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Exploits/Class1.cs" />
+    <entry file="file://$PROJECT_DIR$/ExploitMaker/Class1.cs" />
     <entry file="file://$PROJECT_DIR$/ExploitMaker/ExploitMaker.csproj">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -288,47 +285,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Camsploitx/Program.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExploitMaker/Exploit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="10" selection-end-column="22" />
-          <folding>
-            <marker date="1529085061595" expanded="true" signature="22:287" ph="{...}" />
-            <marker date="1529085061595" expanded="true" signature="58:285" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Camsploitx/Program.cs" />
     <entry file="file://$PROJECT_DIR$/CamSploit/Writter.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <marker date="1529086089448" expanded="true" signature="6:33" ph="..." />
-            <marker date="1529086089448" expanded="true" signature="54:1249" ph="{...}" />
-            <marker date="1529086089448" expanded="true" signature="95:1247" ph="{...}" />
-            <marker date="1529086089448" expanded="true" signature="178:228" ph="{...}" />
-            <marker date="1529086089448" expanded="true" signature="282:378" ph="{...}" />
-            <marker date="1529086089448" expanded="true" signature="434:668" ph="{...}" />
-            <marker date="1529086089448" expanded="true" signature="743:1021" ph="{...}" />
-            <marker date="1529086089448" expanded="true" signature="1052:1104" ph="{...}" />
-            <marker date="1529086089448" expanded="true" signature="1146:1241" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExploitMaker/ShodanHelper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1529086289629" expanded="true" signature="48:360" ph="{...}" />
-            <marker date="1529086289629" expanded="true" signature="87:358" ph="{...}" />
-            <marker date="1529086289629" expanded="true" signature="156:352" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -336,19 +297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <marker date="1529086370643" expanded="false" signature="6:56" ph="..." />
-            <marker date="1529086370643" expanded="true" signature="80:1244" ph="{...}" />
-            <marker date="1529086370643" expanded="true" signature="121:1242" ph="{...}" />
-            <marker date="1529086370643" expanded="true" signature="292:338" ph="{...}" />
-            <marker date="1529086370643" expanded="true" signature="368:442" ph="{...}" />
-            <marker date="1529086370643" expanded="true" signature="482:546" ph="{...}" />
-            <marker date="1529086370643" expanded="true" signature="574:647" ph="{...}" />
-            <marker date="1529086370643" expanded="true" signature="681:746" ph="{...}" />
-            <marker date="1529086370643" expanded="true" signature="775:1022" ph="{...}" />
-            <marker date="1529086370643" expanded="true" signature="904:1012" ph="{...}" />
-            <marker date="1529086370643" expanded="true" signature="1053:1236" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -356,12 +304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="22" selection-start-column="22" selection-end-column="22" />
-          <folding>
-            <marker date="1529086353251" expanded="true" signature="22:657" ph="{...}" />
-            <marker date="1529086353251" expanded="true" signature="45:655" ph="{...}" />
-            <marker date="1529086353251" expanded="true" signature="91:131" ph="{...}" />
-            <marker date="1529086353251" expanded="true" signature="526:649" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -369,12 +311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="22" selection-start-column="10" selection-end-column="22" />
-          <folding>
-            <marker date="1529085174715" expanded="true" signature="22:412" ph="{...}" />
-            <marker date="1529085174715" expanded="true" signature="52:410" ph="{...}" />
-            <marker date="1529085174715" expanded="true" signature="118:204" ph="{...}" />
-            <marker date="1529085174715" expanded="true" signature="339:404" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -382,19 +318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding>
-            <marker date="1529086379633" expanded="false" signature="6:78" ph="..." />
-            <marker date="1529086379633" expanded="true" signature="102:1598" ph="{...}" />
-            <marker date="1529086379633" expanded="true" signature="138:1596" ph="{...}" />
-            <marker date="1529086379633" expanded="true" signature="220:663" ph="{...}" />
-            <marker date="1529086379633" expanded="true" signature="283:653" ph="{...}" />
-            <marker date="1529086379633" expanded="true" signature="412:608" ph="{...}" />
-            <marker date="1529086379633" expanded="true" signature="754:1402" ph="{...}" />
-            <marker date="1529086379633" expanded="true" signature="828:1392" ph="{...}" />
-            <marker date="1529086379633" expanded="true" signature="934:1341" ph="{...}" />
-            <marker date="1529086379633" expanded="true" signature="1098:1283" ph="{...}" />
-            <marker date="1529086379633" expanded="true" signature="1481:1582" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -402,27 +325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <marker date="1529067111555" expanded="true" signature="6:52" ph="..." />
-            <marker date="1529067111555" expanded="true" signature="73:1710" ph="{...}" />
-            <marker date="1529067111555" expanded="true" signature="100:1708" ph="{...}" />
-            <marker date="1529067111555" expanded="true" signature="1363:1702" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExploitMaker/ExploitHelper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1529088779385" expanded="true" signature="6:52" ph="..." />
-            <marker date="1529088779385" expanded="true" signature="76:709" ph="{...}" />
-            <marker date="1529088779385" expanded="true" signature="116:707" ph="{...}" />
-            <marker date="1529088779385" expanded="true" signature="183:261" ph="{...}" />
-            <marker date="1529088779385" expanded="true" signature="322:401" ph="{...}" />
-            <marker date="1529088779385" expanded="true" signature="470:534" ph="{...}" />
-            <marker date="1529088779385" expanded="true" signature="631:701" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -430,55 +332,71 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExploitMaker/HttpRequester.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExploitMaker/ShodanHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <marker date="1529086016423" expanded="false" signature="6:105" ph="..." />
-            <marker date="1529086016423" expanded="true" signature="126:2147" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="157:2145" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="194:460" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="205:285" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="314:371" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="395:456" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="505:1122" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="652:1118" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="737:1113" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="783:1107" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="841:1100" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="1182:1559" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="1218:1555" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="1640:1782" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="1843:2142" ph="{...}" />
-            <marker date="1529086016423" expanded="true" signature="1963:2109" ph="{...}" />
+            <marker date="1529089880307" expanded="false" signature="6:42" ph="..." />
+            <marker date="1529089880307" expanded="true" signature="66:391" ph="{...}" />
+            <marker date="1529089880307" expanded="true" signature="105:389" ph="{...}" />
+            <marker date="1529089880307" expanded="true" signature="183:383" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Exploits/CVE_2018_9995.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <marker date="1529089445728" expanded="true" signature="6:33" ph="..." />
-            <marker date="1529089445728" expanded="true" signature="53:792" ph="{...}" />
-            <marker date="1529089445728" expanded="true" signature="92:790" ph="{...}" />
-            <marker date="1529089445728" expanded="true" signature="146:590" ph="{...}" />
-            <marker date="1529089445728" expanded="true" signature="354:450" ph="{...}" />
-            <marker date="1529089445728" expanded="true" signature="477:522" ph="{...}" />
+            <marker date="1529089883247" expanded="false" signature="6:33" ph="..." />
+            <marker date="1529089883247" expanded="true" signature="53:851" ph="{...}" />
+            <marker date="1529089883247" expanded="true" signature="96:849" ph="{...}" />
+            <marker date="1529089883247" expanded="true" signature="368:843" ph="{...}" />
+            <marker date="1529089883247" expanded="true" signature="474:746" ph="{...}" />
+            <marker date="1529089883247" expanded="true" signature="776:833" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ExploitMaker/HttpRequester.cs">
+    <entry file="file://$PROJECT_DIR$/ExploitMaker/Exploit.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
-            <marker date="1529089325615" expanded="true" signature="6:71" ph="..." />
-            <marker date="1529089325615" expanded="true" signature="95:1118" ph="{...}" />
-            <marker date="1529089325615" expanded="true" signature="135:1116" ph="{...}" />
-            <marker date="1529089325615" expanded="true" signature="186:1110" ph="{...}" />
-            <marker date="1529089325615" expanded="true" signature="547:1011" ph="{...}" />
-            <marker date="1529089325615" expanded="true" signature="850:997" ph="{...}" />
-            <marker date="1529089325615" expanded="true" signature="1043:1100" ph="{...}" />
+            <marker date="1529092942695" expanded="true" signature="22:296" ph="{...}" />
+            <marker date="1529092942695" expanded="true" signature="58:294" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExploitMaker/ExploitHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding>
+            <marker date="1529096126900" expanded="true" signature="6:108" ph="..." />
+            <marker date="1529096126900" expanded="true" signature="132:1703" ph="{...}" />
+            <marker date="1529096126900" expanded="true" signature="172:1701" ph="{...}" />
+            <marker date="1529096126900" expanded="true" signature="278:889" ph="{...}" />
+            <marker date="1529096126900" expanded="true" signature="619:879" ph="{...}" />
+            <marker date="1529096126900" expanded="true" signature="959:1034" ph="{...}" />
+            <marker date="1529096126900" expanded="true" signature="1087:1166" ph="{...}" />
+            <marker date="1529096126900" expanded="true" signature="1227:1291" ph="{...}" />
+            <marker date="1529096126900" expanded="true" signature="1380:1451" ph="{...}" />
+            <marker date="1529096126900" expanded="true" signature="1505:1695" ph="{...}" />
+            <marker date="1529096126900" expanded="true" signature="1531:1685" ph="{...}" />
           </folding>
         </state>
       </provider>
