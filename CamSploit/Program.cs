@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using CamSploit.CVEs;
 using CommandLine;
+using ExploitMaker;
 
 namespace CamSploit
 {

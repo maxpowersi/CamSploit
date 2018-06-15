@@ -1,8 +1,0 @@
-C:\Users\EB_I01444\Documents\Github\CamSploit\CamSploit\bin\Debug\CamSploit.exe
-C:\Users\EB_I01444\Documents\Github\CamSploit\CamSploit\bin\Debug\CamSploit.pdb
-C:\Users\EB_I01444\Documents\Github\CamSploit\CamSploit\bin\Debug\CommandLine.dll
-C:\Users\EB_I01444\Documents\Github\CamSploit\CamSploit\bin\Debug\Newtonsoft.Json.dll
-C:\Users\EB_I01444\Documents\Github\CamSploit\CamSploit\bin\Debug\Shodan.Net.dll
-C:\Users\EB_I01444\Documents\Github\CamSploit\CamSploit\obj\x86\Debug\CamSploit.csprojResolveAssemblyReference.cache
-C:\Users\EB_I01444\Documents\Github\CamSploit\CamSploit\obj\x86\Debug\CamSploit.exe
-C:\Users\EB_I01444\Documents\Github\CamSploit\CamSploit\obj\x86\Debug\CamSploit.pdb

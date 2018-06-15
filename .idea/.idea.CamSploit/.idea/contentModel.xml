@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\EB_I01444\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_CamSploit.1666741088.00" t="ExcludeRecursive" />
+    <e p="C:\Users\EB_I01444\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_CamSploit.1666741088.00" t="ExcludeRecursive" />
     <e p="C:\Users\EB_I01444\Documents\Github\CamSploit" t="IncludeFlat">
       <e p="CamSploit" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Camera.cs" t="Include" />
-        <e p="CamLoader.cs" t="Include" />
         <e p="CamSploit.csproj" t="IncludeRecursive" />
-        <e p="Credencial.cs" t="Include" />
-        <e p="CVEs" t="Include">
-          <e p="CVE_2018_9995.cs" t="Include" />
-        </e>
         <e p="ErrorException.cs" t="Include" />
-        <e p="Exploit.cs" t="Include" />
-        <e p="ExploitHelper.cs" t="Include" />
         <e p="InputType.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Options.cs" t="Include" />
@@ -23,11 +15,39 @@
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
-        <e p="ShodanHelper.cs" t="Include" />
-        <e p="TxtFile.cs" t="Include" />
         <e p="Writter.cs" t="Include" />
       </e>
       <e p="CamSploit.sln" t="IncludeFlat" />
+      <e p="ExploitMaker" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Camera.cs" t="Include" />
+        <e p="CamLoader.cs" t="Include" />
+        <e p="Credencial.cs" t="Include" />
+        <e p="Exploit.cs" t="Include" />
+        <e p="ExploitHelper.cs" t="Include" />
+        <e p="ExploitMaker.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net472" t="Include">
+              <e p="ExploitMaker.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ShodanHelper.cs" t="Include" />
+        <e p="TxtFile.cs" t="Include" />
+      </e>
+      <e p="Exploits" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CVE_2018_9995.cs" t="Include" />
+        <e p="Exploits.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net472" t="Include">
+              <e p="Exploits.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="README.md" t="Include" />
     </e>

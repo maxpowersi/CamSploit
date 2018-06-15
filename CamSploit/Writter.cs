@@ -1,4 +1,5 @@
 ﻿using System;
+using ExploitMaker;
 
 namespace CamSploit
 {
