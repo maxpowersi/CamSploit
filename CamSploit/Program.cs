@@ -40,7 +40,7 @@ namespace CamSploit
 						{
 							writter.InitTest(e.CommonName, cam);
 
-							var credencials = e.Exploit(cam.UrlHttp);
+							var credencials = e.Run(cam.UrlHttp);
 
 							if (credencials != null)
 								writter.TestSuccess(e.CommonName, cam, credencials);
@@ -67,7 +67,7 @@ namespace CamSploit
 			}
 		}
 
-		private static IEnumerable<IExploit> GetExploits(IEnumerable<string> exploits)
+		private static IEnumerable<Exploit> GetExploits(IEnumerable<string> exploits)
 		{
 			//TODO
 			return exploits.Select(x => x.ToUpper()).Contains("ALL") ? ExploitHelper.GetAll() : ExploitHelper.GetExploits(exploits);

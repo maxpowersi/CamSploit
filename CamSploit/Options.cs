@@ -3,7 +3,6 @@ using CommandLine;
 
 namespace CamSploit
 {
-  //test
     public class Options
     {
         [Option("target-host", Required = true, HelpText = "Text file with one single full host (IP:Port) per line", SetName = "a")]
