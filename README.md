@@ -1,6 +1,6 @@
 ![alt tag](https://raw.githubusercontent.com/maxpowersi/CamSploit/master/Resources/icon.png)
 # CamSploit v1.0.1
-CamSploit is an exploiting tool that helps in the IP camera pentest. It was developed using Dot Net Core (compatible con windows and linux), tested in windows 10 and Ubuntu 16. It has got a modular collection of exploit. You can create your own modules to expands the currents exploits. CamSploit is distributed under the GNU GPLv3 license. In the next weeks, it will be added more than 10 exploits.
+CamSploit is an exploiting tool that helps in the IP camera pentest. It was developed using Dot Net Core (compatible with Windows and Linux), tested in windows 10 and Ubuntu 16. It has got a modular collection of exploits. You can create your own modules to expands the currents exploits. CamSploit is distributed under the GNU GPLv3 license. In the next weeks, it will be added more than 10 exploits.
 ## Usage
 ```
 dotnet CamSploit.dll --help
