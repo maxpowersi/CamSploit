@@ -19,7 +19,7 @@ namespace CamSploit
         [Option("show-exploit", Required = true, HelpText = "Show all exploits in the application or the description of one exploit.", SetName = "d")]
         public string ShowExploit { get; set; }
 
-        [Option("output", Required = false, Default = "output.camsploit.txt", HelpText = "Output file")]
+        [Option("output", Required = false, Default = "output.camsploit.txt", HelpText = "Output file (it is optional)")]
         public string Output { get; set; }
 
         [Option("exploits", Required = false,

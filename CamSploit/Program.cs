@@ -8,8 +8,6 @@ namespace CamSploit
 {
     public static class Program
     {
-        private const string AllExploits = "ALL";
-        
         private static void Main(string[] args)
         {
             try
@@ -29,13 +27,44 @@ namespace CamSploit
         private static void Process(Options opts)
         {
             if (opts.GetInputType() == InputType.ListExploit)
-                ProcessShowExploit(opts.ShowExploit);
+            {
+                string desc;
+                if (opts.ShowExploit.ToUpper() == "ALL")
+                {
+                    desc = string.Join("\n", ExploitHelper.GetAllCommonName());
+                }
+                else
+                {
+                    var exploit = ExploitHelper.GetExploit(opts.ShowExploit);
+                    desc = exploit == null ? Phrases.Invalid_Common_Name : exploit.Description;
+                }
+
+                Console.WriteLine(desc);
+            }
             else
                 using (var writter = new Writter(opts.Output))
                 {
-                    foreach (var cam in GetCams(opts))
+                    IEnumerable<Camera> cams = null;
+                    switch (opts.GetInputType())
                     {
-                        foreach (var e in GetExploits(opts.Exploits))
+                        case InputType.SingleHost:
+                            cams = CamLoader.LoadFromHost(opts.SingleHost);
+                            break;
+                        case InputType.ListHost:
+                            cams = CamLoader.LoadFromTextFile(opts.ListHost);
+                            break;
+                        case InputType.Shodan:
+                            cams = CamLoader.LoadFromShodanJsonFile(opts.ShodanFile);
+                            break;
+                         case InputType.None:
+                             throw new ErrorException(Phrases.Invalid_Main_Action);
+                    }
+
+                    var exploits = opts.Exploits != null && opts.Exploits.Any() ? ExploitHelper.GetExploits(opts.Exploits) : ExploitHelper.GetAll();
+
+                    foreach (var cam in cams)
+                    {
+                        foreach (var e in exploits)
                         {
                             writter.InitTest(e.CommonName, cam);
 
@@ -50,43 +79,5 @@ namespace CamSploit
                 }
         }
 
-        private static IEnumerable<Camera> GetCams(Options opts)
-        {
-            switch (opts.GetInputType())
-            {
-                case InputType.SingleHost:
-                    return CamLoader.LoadFromHost(opts.SingleHost);
-                case InputType.ListHost:
-                    return CamLoader.LoadFromTextFile(opts.ListHost);
-                case InputType.Shodan:
-                    return CamLoader.LoadFromShodanJsonFile(opts.ShodanFile);
-                default:
-                    throw new Exception(Phrases.Invalid_Main_Action);
-            }
-        }
-
-        private static IEnumerable<Exploit> GetExploits(IEnumerable<string> exploits)
-        {
-            if (exploits == null || !exploits.Any())
-                return ExploitHelper.GetAll();
-            
-            return ExploitHelper.GetExploits(exploits);
-        }
-
-        private static void ProcessShowExploit(string commonName)
-        {
-            string desc;
-            if (commonName.ToUpper() == "ALL")
-            {
-                desc = string.Join("\n", ExploitHelper.GetAllCommonName());
-            }
-            else
-            {
-                var exploit = ExploitHelper.GetExploit(commonName);
-                desc = exploit == null ? Phrases.Invalid_Common_Name : exploit.Description;
-            }
-
-            Console.WriteLine(desc);
-        }
     }
 }
