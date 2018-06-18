@@ -1,3 +1,6 @@
 .idea
 CamSploit.sln.DotSettings.user
 Release
+CamSploit\obj
+ExploitMaker\obj
+Exploits\obj
