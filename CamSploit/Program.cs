@@ -8,6 +8,8 @@ namespace CamSploit
 {
     public static class Program
     {
+        private const string AllExploits = "ALL";
+        
         private static void Main(string[] args)
         {
             try
@@ -26,23 +28,24 @@ namespace CamSploit
 
         private static void Process(Options opts)
         {
-            //For ListExploit main action
             if (opts.GetInputType() == InputType.ListExploit)
-                ProcessListExploit(opts.ListHost.ToUpper());
+                ProcessShowExploit(opts.ShowExploit);
             else
                 using (var writter = new Writter(opts.Output))
                 {
                     foreach (var cam in GetCams(opts))
-                    foreach (var e in GetExploits(opts.Exploit))
                     {
-                        writter.InitTest(e.CommonName, cam);
+                        foreach (var e in GetExploits(opts.Exploits))
+                        {
+                            writter.InitTest(e.CommonName, cam);
 
-                        var credencials = e.Run(cam.UrlHttp);
+                            var credencials = e.Run(cam.UrlHttp);
 
-                        if (credencials != null)
-                            writter.TestSuccess(e.CommonName, cam, credencials);
-                        else
-                            writter.TestFailed(e.CommonName, cam);
+                            if (credencials != null)
+                                writter.TestSuccess(e.CommonName, cam, credencials);
+                            else
+                                writter.TestFailed(e.CommonName, cam);
+                        }
                     }
                 }
         }
@@ -64,16 +67,16 @@ namespace CamSploit
 
         private static IEnumerable<Exploit> GetExploits(IEnumerable<string> exploits)
         {
-            //TODO
-            return exploits.Select(x => x.ToUpper()).Contains("ALL")
-                ? ExploitHelper.GetAll()
-                : ExploitHelper.GetExploits(exploits);
+            if (exploits == null || !exploits.Any())
+                return ExploitHelper.GetAll();
+            
+            return ExploitHelper.GetExploits(exploits);
         }
 
-        private static void ProcessListExploit(string commonName)
+        private static void ProcessShowExploit(string commonName)
         {
             string desc;
-            if (commonName == "ALL")
+            if (commonName.ToUpper() == "ALL")
             {
                 desc = string.Join("\n", ExploitHelper.GetAllCommonName());
             }

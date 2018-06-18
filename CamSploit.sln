@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamSploit", "CamSploit\CamSploit.csproj", "{7449062D-CFB3-441C-B73C-B9EE882554A0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploitMaker", "ExploitMaker\ExploitMaker.csproj", "{990CCB0F-6917-46B4-9A63-423B7B77C971}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exploits", "Exploits\Exploits.csproj", "{04166FD8-4B34-4C47-94F5-1B1EC803805D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamSploit", "CamSploit\CamSploit.csproj", "{220CC5C4-B0F6-4D46-9603-693F676D0A4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,17 +13,17 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7449062D-CFB3-441C-B73C-B9EE882554A0}.Release|x86.ActiveCfg = Release|x86
-		{7449062D-CFB3-441C-B73C-B9EE882554A0}.Release|x86.Build.0 = Release|x86
-		{7449062D-CFB3-441C-B73C-B9EE882554A0}.Debug|x86.ActiveCfg = Release|x86
-		{7449062D-CFB3-441C-B73C-B9EE882554A0}.Debug|x86.Build.0 = Release|x86
-		{990CCB0F-6917-46B4-9A63-423B7B77C971}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{990CCB0F-6917-46B4-9A63-423B7B77C971}.Debug|x86.Build.0 = Debug|Any CPU
 		{990CCB0F-6917-46B4-9A63-423B7B77C971}.Release|x86.ActiveCfg = Release|Any CPU
 		{990CCB0F-6917-46B4-9A63-423B7B77C971}.Release|x86.Build.0 = Release|Any CPU
-		{04166FD8-4B34-4C47-94F5-1B1EC803805D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{04166FD8-4B34-4C47-94F5-1B1EC803805D}.Debug|x86.Build.0 = Debug|Any CPU
+		{990CCB0F-6917-46B4-9A63-423B7B77C971}.Debug|x86.ActiveCfg = Release|Any CPU
+		{990CCB0F-6917-46B4-9A63-423B7B77C971}.Debug|x86.Build.0 = Release|Any CPU
 		{04166FD8-4B34-4C47-94F5-1B1EC803805D}.Release|x86.ActiveCfg = Release|Any CPU
 		{04166FD8-4B34-4C47-94F5-1B1EC803805D}.Release|x86.Build.0 = Release|Any CPU
+		{04166FD8-4B34-4C47-94F5-1B1EC803805D}.Debug|x86.ActiveCfg = Release|Any CPU
+		{04166FD8-4B34-4C47-94F5-1B1EC803805D}.Debug|x86.Build.0 = Release|Any CPU
+		{220CC5C4-B0F6-4D46-9603-693F676D0A4A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{220CC5C4-B0F6-4D46-9603-693F676D0A4A}.Debug|x86.Build.0 = Debug|Any CPU
+		{220CC5C4-B0F6-4D46-9603-693F676D0A4A}.Release|x86.ActiveCfg = Release|Any CPU
+		{220CC5C4-B0F6-4D46-9603-693F676D0A4A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
