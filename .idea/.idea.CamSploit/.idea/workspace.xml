@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e851ea2b-2003-4f56-bdb0-8f75ba57cd43" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CamSploit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/CamSploit.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/CamSploit.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/Options.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/Options.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/Phrases.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/Phrases.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CamSploit/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CamSploit/Properties/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExploitMaker/ShodanHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exploits/CVE_2018_9995.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Exploits/CVE_2018_9995.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -92,6 +82,21 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="CamSploit (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="CamSploit (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CamSploit" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="CamSploit (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ExploitMaker" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="CamSploit (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Exploits" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -151,7 +156,7 @@
       <workItem from="1529084603177" duration="5068000" />
       <workItem from="1529092570095" duration="2751000" />
       <workItem from="1529327540250" duration="6440000" />
-      <workItem from="1529334460245" duration="1606000" />
+      <workItem from="1529334460245" duration="1903000" />
     </task>
     <task id="LOCAL-00001" summary="New architecture created">
       <created>1529087643945</created>
@@ -174,11 +179,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529096139083</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New architecture created">
+      <created>1529336125731</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1529336125731</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16773000" />
+    <option name="totallyTimeSpent" value="17070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -197,13 +209,13 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Unit Tests" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15458423" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15458423" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="8" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32897604" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
