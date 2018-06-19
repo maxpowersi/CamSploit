@@ -1,6 +1,9 @@
 .idea
 CamSploit.sln.DotSettings.user
-Release
 CamSploit\obj
+CamSploit\bin
 ExploitMaker\obj
+ExploitMaker\bin
 Exploits\obj
+Exploits\bin
+Binary

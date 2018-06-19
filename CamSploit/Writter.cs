@@ -1,14 +1,19 @@
 ﻿using System;
+using System.IO;
+using System.Reflection;
 using ExploitMaker;
 
 namespace CamSploit
 {
-    public class Writter : IDisposable
+    public class Writter : IWritter
     {
         private TxtFile _txtFile;
 
         public Writter(string outputPath)
         {
+            if (!Path.IsPathRooted(outputPath))
+                outputPath = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), outputPath);
+            
             Init(outputPath);
         }
 
@@ -19,21 +24,26 @@ namespace CamSploit
 
         public void InitTest(string cve, Camera cam)
         {
-            Console.WriteLine("Testing {0} for Cam {1}", cve, cam.Address);
+            Console.WriteLine(Phrases.Init_Test, cve, cam.Address);
         }
 
         public void TestFailed(string cve, Camera cam)
         {
-            Console.WriteLine("The Cam {0} is not vulnerable or it is not available for the {1}", cam.Address, cve);
-            if (_txtFile != null)
-                _txtFile.Write(cam + ",,," + cve);
+            Console.WriteLine(Phrases.Test_File, cam.Address, cve);
+
+            _txtFile?.Write(cam + ",,," + cve);
         }
 
         public void TestSuccess(string cve, Camera cam, Credencial cred)
         {
-            Console.WriteLine("The Cam {0} is vulnerbale to {1} the result is {2}", cam.Address, cve, cred);
-            if (_txtFile != null)
-                _txtFile.Write(cam + "," + cred.Username + "," + cred.Password + "," + cve);
+            Console.WriteLine(Phrases.Test_Success, cam.Address, cve, cred);
+
+            _txtFile?.Write(cam + "," + cred.Username + "," + cred.Password + "," + cve);
+        }
+
+        public void LogError(string cve, Camera cam, string error)
+        {
+            Console.WriteLine(error, cam.Address, cve);
         }
 
         private void Init(string output)

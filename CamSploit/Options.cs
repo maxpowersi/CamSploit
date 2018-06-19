@@ -9,11 +9,11 @@ namespace CamSploit
             SetName = "a")]
         public string SingleHost { get; set; }
 
-        [Option("list-rhost", Required = true, HelpText = "Text file with one single full host (IP:Port) per line.",
+        [Option("rhost-list", Required = true, HelpText = "Text file with one single full host (IP:Port) per line.",
             SetName = "b")]
         public string ListHost { get; set; }
 
-        [Option("shodan-file", Required = true, HelpText = "JSON Shodan data file, example: data.json", SetName = "c")]
+        [Option("rhost-shodan-file", Required = true, HelpText = "JSON Shodan data file, example: data.json", SetName = "c")]
         public string ShodanFile { get; set; }
 
         [Option("show-exploit", Required = true, HelpText = "Show all exploits in the application or the description of one exploit.", SetName = "d")]

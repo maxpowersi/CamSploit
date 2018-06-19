@@ -26,23 +26,25 @@ namespace CamSploit
 
         private static void Process(Options opts)
         {
-            if (opts.GetInputType() == InputType.ListExploit)
+            using (var writter = new Writter(opts.Output))
             {
-                string desc;
-                if (opts.ShowExploit.ToUpper() == "ALL")
+                ExploitHelper.InitWritter(writter);
+                if (opts.GetInputType() == InputType.ListExploit)
                 {
-                    desc = string.Join("\n", ExploitHelper.GetAllCommonName());
+                    string desc;
+                    if (opts.ShowExploit.ToUpper() == "ALL")
+                    {
+                        desc = string.Join("\n", ExploitHelper.GetAllCommonName());
+                    }
+                    else
+                    {
+                        var exploit = ExploitHelper.GetExploit(opts.ShowExploit);
+                        desc = exploit == null ? Phrases.Invalid_Common_Name : exploit.Description;
+                    }
+
+                    Console.WriteLine(desc);
                 }
                 else
-                {
-                    var exploit = ExploitHelper.GetExploit(opts.ShowExploit);
-                    desc = exploit == null ? Phrases.Invalid_Common_Name : exploit.Description;
-                }
-
-                Console.WriteLine(desc);
-            }
-            else
-                using (var writter = new Writter(opts.Output))
                 {
                     IEnumerable<Camera> cams = null;
                     switch (opts.GetInputType())
@@ -56,28 +58,26 @@ namespace CamSploit
                         case InputType.Shodan:
                             cams = CamLoader.LoadFromShodanJsonFile(opts.ShodanFile);
                             break;
-                         case InputType.None:
-                             throw new ErrorException(Phrases.Invalid_Main_Action);
+                        case InputType.None:
+                            throw new 
+                                ErrorException(Phrases.Invalid_Main_Action);
                     }
 
-                    var exploits = opts.Exploits != null && opts.Exploits.Any() ? ExploitHelper.GetExploits(opts.Exploits) : ExploitHelper.GetAll();
+                    var exploits = opts.Exploits != null && opts.Exploits.Any()
+                        ? ExploitHelper.GetExploits(opts.Exploits)
+                        : ExploitHelper.GetAll();
 
+                    if (cams == null)
+                        return;
+
+                    var enumerable = exploits as Exploit[] ?? exploits.ToArray();
                     foreach (var cam in cams)
                     {
-                        foreach (var e in exploits)
-                        {
-                            writter.InitTest(e.CommonName, cam);
-
-                            var credencials = e.Run(cam.UrlHttp);
-
-                            if (credencials != null)
-                                writter.TestSuccess(e.CommonName, cam, credencials);
-                            else
-                                writter.TestFailed(e.CommonName, cam);
-                        }
+                        foreach (var e in enumerable)
+                            e.Run(cam);
                     }
                 }
+            }
         }
-
     }
 }
