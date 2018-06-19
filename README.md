@@ -4,23 +4,30 @@ CamSploit is an exploiting tool that helps in the IP camera pentest. It was deve
 ## Usage
 ```
 dotnet CamSploit.dll --help
-CamSploit 1.0.0
+CamSploit 1.0.1
 Copyright (C) 2018 CamSploit
-  --rhost           Required. Single host in format IP:Port, example 192.168.0.1:80
+ERROR(S):
+Required option 'rhost' is missing.
+Required option 'rhost-list' is missing.
+Required option 'rhost-shodan-file' is missing.
+Required option 'show-exploit' is missing.
 
-  --list-rhost      Required. Text file with one single full host (IP:Port) per line.
+  --rhost                Required. Single host in format IP:Port, example 192.168.0.1:80
 
-  --shodan-file     Required. JSON Shodan data file, example: data.json
+  --rhost-list           Required. Text file with one single full host (IP:Port) per line.
 
-  --show-exploit    Required. Show all exploits in the application or the description of one exploit.
+  --rhost-shodan-file    Required. JSON Shodan data file, example: data.json
 
-  --output          (Default: output.camsploit.txt)  Output file (it is optional).
+  --show-exploit         Required. Show all exploits in the application or the description of one exploit.
 
-  --exploits        List of exploits separated by spaces, example CVE_2018_9995 Default_Password_CeNova
+  --output               (Default: output.camsploit.txt) Output file (it is optional).
 
-  --help            Display this help screen.
+  --exploits             List of exploits separated by spaces, example CVE_2018_9995 Default_Password_CeNova
 
-  --version         Display version information.
+  --help                 Display this help screen.
+
+  --version              Display version information.
+
 ```
 ## Example
 ```
