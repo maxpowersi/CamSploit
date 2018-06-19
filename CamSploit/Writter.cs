@@ -45,8 +45,8 @@ namespace CamSploit
 
         public void TestFailedMsg(string cve, Camera cam, string error)
         {
-            Console.WriteLine(error, cam.Address, cve);
-            _txtFile.Write(cam + ",null,null," + cve + ", Fail," + string.Format(error, cam.Address, cve));
+            Console.WriteLine(error);
+            _txtFile.Write(cam + ",null,null," + cve + ", Fail," + error);
             _txtFile.Flush();
         }
     }
