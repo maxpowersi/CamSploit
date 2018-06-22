@@ -26,25 +26,26 @@ namespace CamSploit
 
         private static void Process(Options opts)
         {
+            if (opts.GetInputType() == InputType.ListExploit)
+            {
+                string desc;
+                if (opts.ShowExploit.ToUpper() == "ALL")
+                {
+                    desc = string.Join("\n", ExploitHelper.GetAllCommonName());
+                }
+                else
+                {
+                    var exploit = ExploitHelper.GetExploit(opts.ShowExploit);
+                    desc = exploit == null ? Phrases.Invalid_Common_Name : exploit.Description;
+                }
+
+                Console.WriteLine(desc);
+                return;
+            }
+            
             using (var writter = new Writter(opts.Output))
             {
                 ExploitHelper.InitWritter(writter);
-                if (opts.GetInputType() == InputType.ListExploit)
-                {
-                    string desc;
-                    if (opts.ShowExploit.ToUpper() == "ALL")
-                    {
-                        desc = string.Join("\n", ExploitHelper.GetAllCommonName());
-                    }
-                    else
-                    {
-                        var exploit = ExploitHelper.GetExploit(opts.ShowExploit);
-                        desc = exploit == null ? Phrases.Invalid_Common_Name : exploit.Description;
-                    }
-
-                    Console.WriteLine(desc);
-                }
-                else
                 {
                     IEnumerable<Camera> cams = null;
                     switch (opts.GetInputType())
