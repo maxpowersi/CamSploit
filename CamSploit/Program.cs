@@ -74,7 +74,24 @@ namespace CamSploit
                     foreach (var cam in cams)
                     {
                         foreach (var e in enumerable)
-                            e.Run(cam);
+                        {
+                            try
+                            {
+                                ExploitHelper.Writter.InitTest(e.CommonName, cam);
+                                
+                                var cred = e.Run(cam);
+                                
+                                if(cred != null)
+                                    ExploitHelper.Writter.TestSuccess(e.CommonName, cam, cred);
+                                else
+                                    ExploitHelper.Writter.TestFailed(e.CommonName, cam);
+                            }
+                            catch (ExploitFailException ex)
+                            {
+                                Console.WriteLine(ex);
+                                ExploitHelper.Writter.TestFailedMsg(ex.CommonName, ex.Camera, ex.Message);
+                            }
+                        }
                     }
                 }
             }
