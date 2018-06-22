@@ -13,10 +13,10 @@ namespace CamSploit
         {
             if (!Path.IsPathRooted(outputPath))
                 outputPath = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), outputPath);
-            
+
             _txtFile = new StreamWriter(outputPath);
         }
-        
+
         public void Dispose()
         {
             _txtFile.Dispose();
@@ -26,12 +26,12 @@ namespace CamSploit
         {
             Console.WriteLine(Phrases.Init_Test, cve, cam.Address);
         }
-        
+
         public void TestSuccess(string cve, Camera cam, Credencial cred)
         {
             Console.WriteLine(Phrases.Test_Success, cam.Address, cve, cred);
 
-            _txtFile.WriteLine(cam + "," + cred.Username + "," + cred.Password + "," + cve + ", Success," + "");
+            _txtFile.WriteLine(cam + "," + cred.Username + "," + cred.Password + "," + cve + ",Success," + "");
             _txtFile.Flush();
         }
 
@@ -39,14 +39,14 @@ namespace CamSploit
         {
             Console.WriteLine(Phrases.Test_File, cam.Address, cve);
 
-            _txtFile.WriteLine(cam + ",null,null," + cve + ", Fail," + "");
+            _txtFile.WriteLine(cam + ",null,null," + cve + ",Fail," + "");
             _txtFile.Flush();
         }
 
         public void TestFailedMsg(string cve, Camera cam, string error)
         {
             Console.WriteLine(error);
-            _txtFile.WriteLine(cam + ",null,null," + cve + ", Fail," + error);
+            _txtFile.WriteLine(cam + ",null,null," + cve + ",Fail," + error);
             _txtFile.Flush();
         }
     }
