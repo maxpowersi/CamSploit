@@ -47,7 +47,7 @@ namespace CamSploit
         {
             Console.WriteLine(error);
 
-            _txtFile.WriteLine(string.Join(',', cam, "null", "null", cve, "Fail", error.Replace(',', '')));
+            _txtFile.WriteLine(string.Join(',', cam, "null", "null", cve, "Fail", error.Replace(',', ' ')));
             _txtFile.Flush();
         }
     }
