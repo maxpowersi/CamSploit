@@ -31,6 +31,12 @@ namespace CamSploit
         {
             Console.WriteLine(Phrases.Test_Success, cam.Address, cve, cred);
 
+            if (string.IsNullOrEmpty(cred.Username))
+                cred.Username = "";
+            
+            if (string.IsNullOrEmpty(cred.Username))
+                cred.Password = "{null}";
+            
             _txtFile.WriteLine(string.Join(',', cam, cred.Username, cred.Password, cve, "Success",""));
             _txtFile.Flush();
         }
@@ -47,6 +53,9 @@ namespace CamSploit
         {
             Console.WriteLine(error);
 
+            if (string.IsNullOrEmpty(error))
+                error = "";
+            
             _txtFile.WriteLine(string.Join(',', cam, "null", "null", cve, "Fail", error.Replace(',', ' ')));
             _txtFile.Flush();
         }
