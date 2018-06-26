@@ -31,22 +31,23 @@ namespace CamSploit
         {
             Console.WriteLine(Phrases.Test_Success, cam.Address, cve, cred);
 
-            _txtFile.WriteLine(cam + "," + cred.Username + "," + cred.Password + "," + cve + ",Success," + "");
+            _txtFile.WriteLine(string.Join(',', cam, cred.Username, cred.Password, cve, "Success",""));
             _txtFile.Flush();
         }
 
         public void TestFailed(string cve, Camera cam)
         {
             Console.WriteLine(Phrases.Test_File, cam.Address, cve);
-
-            _txtFile.WriteLine(cam + ",null,null," + cve + ",Fail," + "");
+            
+            _txtFile.WriteLine(string.Join(',', cam, "null", "null", cve, ",Fail,", ""));
             _txtFile.Flush();
         }
 
         public void TestFailedMsg(string cve, Camera cam, string error)
         {
             Console.WriteLine(error);
-            _txtFile.WriteLine(cam + ",null,null," + cve + ",Fail," + error);
+
+            _txtFile.WriteLine(string.Join(',', cam, "null", "null", cve, "Fail", error.Replace(',', '')));
             _txtFile.Flush();
         }
     }
