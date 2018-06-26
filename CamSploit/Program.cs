@@ -89,7 +89,7 @@ namespace CamSploit
                             }
                             catch (ExploitFailException ex)
                             {
-                                Console.WriteLine(ex);
+                                Console.WriteLine(ex.Message);
                                 ExploitHelper.Writter.TestFailedMsg(ex.CommonName, ex.Camera, ex.Message);
                             }
                         }
