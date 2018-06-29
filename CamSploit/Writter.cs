@@ -29,17 +29,19 @@ namespace CamSploit
 
         public void TestSuccess(string cve, Camera cam, Credencial cred)
         {
-          
             if (string.IsNullOrEmpty(cred.Username))
                 cred.Username = "{null}";
             
             if (string.IsNullOrEmpty(cred.Password))
                 cred.Password = "{null}";
-            
-            Console.WriteLine(Phrases.Test_Success, cam.Address, cve, cred);
-            
+
+            var ms = string.Format(Phrases.Test_Success, cam.Address, cve, cred);
+            if (string.IsNullOrEmpty(cred.Message))
+                Console.WriteLine(ms);
+            else
+                Console.WriteLine(ms + " - " + cred.Message);
+                
             _txtFile.WriteLine(string.Join(',', cam, cred.Username, cred.Password, cve, "Success",cred.Message));
-            
             _txtFile.Flush();
         }
 
