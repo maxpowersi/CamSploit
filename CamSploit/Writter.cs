@@ -43,15 +43,7 @@ namespace CamSploit
             _txtFile.Flush();
         }
 
-        public void TestFailed(string cve, Camera cam)
-        {
-            Console.WriteLine(Phrases.Test_File, cam.Address, cve);
-            
-            _txtFile.WriteLine(string.Join(',', cam, "null", "null", cve, "Fail", ""));
-            _txtFile.Flush();
-        }
-
-        public void TestFailedMsg(string cve, Camera cam, string error)
+        public void TestFailed(string cve, Camera cam, string error = "")
         {
             Console.WriteLine(error);
 
@@ -59,6 +51,14 @@ namespace CamSploit
                 error = "";
             
             _txtFile.WriteLine(string.Join(',', cam, "null", "null", cve, "Fail", error.Replace(',', ' ')));
+            _txtFile.Flush();
+        }
+        
+        public void TestFailedUnreachableTarget(string cve, Camera cam, string error)
+        {
+            Console.WriteLine(string.Format(Phrases.IP_Camera_Is_Not_Reachable, cam.Address, cve));
+            
+            _txtFile.WriteLine(string.Join(',', cam, "null", "null", cve, "unreachable", error));
             _txtFile.Flush();
         }
     }

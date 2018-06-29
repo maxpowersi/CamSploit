@@ -20,7 +20,7 @@ namespace CamSploit
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exception: " + ex.Message);
+                Console.WriteLine(ex);
             }
         }
 
@@ -89,7 +89,11 @@ namespace CamSploit
                             }
                             catch (ExploitFailException ex)
                             {
-                                ExploitHelper.Writter.TestFailedMsg(ex.CommonName, ex.Camera, ex.Message);
+                                ExploitHelper.Writter.TestFailed(ex.CommonName, ex.Camera, ex.Message);
+                            }
+                            catch (ExploituUreachableTargetException ex)
+                            {
+                                ExploitHelper.Writter.TestFailedUnreachableTarget(ex.CommonName, ex.Camera, ex.Message);
                             }
                         }
                     }
