@@ -45,14 +45,14 @@ namespace CamSploit
             _txtFile.Flush();
         }
 
-        public void TestFailed(string cve, Camera cam, string error = "")
+        public void TestFailed(string module, Camera cam, string error = "")
         {
-            Console.WriteLine(error);
-
             if (string.IsNullOrEmpty(error))
-                error = "";
+                error = string.Format(Phrases.Test_Fail, cam.Host, module);
             
-            _txtFile.WriteLine(string.Join(',', cam, "null", "null", cve, "Fail", error.Replace(',', ' ')));
+            Console.WriteLine(error);
+            
+            _txtFile.WriteLine(string.Join(',', cam, "null", "null", module, "Fail", error.Replace(',', ' ')));
             _txtFile.Flush();
         }
         
