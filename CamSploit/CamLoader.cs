@@ -3,7 +3,7 @@ using System.IO;
 using System.Reflection;
 using Newtonsoft.Json.Linq;
 
-namespace ExploitMaker
+namespace ExploitMaker.Cam
 {
     public static class CamLoader
     {

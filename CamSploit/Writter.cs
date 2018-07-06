@@ -2,13 +2,20 @@
 using System.IO;
 using System.Reflection;
 using ExploitMaker;
+using ExploitMaker.Exceptions;
+using ExploitMaker.Modules;
 
 namespace CamSploit
 {
-    public class Writter : IWritter
+    public class Writter:IDisposable
     {
         private readonly StreamWriter _txtFile;
 
+        private string _fail = "Fail";
+        private string _notVulnerable = "NotVulnerable";
+        private string _vulnerable= "Vulnerable";
+        private string _unreachable = "Unreachable";
+        
         public Writter(string outputPath)
         {
             if (!Path.IsPathRooted(outputPath))
@@ -22,46 +29,51 @@ namespace CamSploit
             _txtFile.Dispose();
         }
 
-        public void InitTest(string cve, Camera cam)
+        public void InitTest(string module, Camera cam)
         {
-            Console.WriteLine(Phrases.Init_Test, cve, cam.Address);
+            Console.WriteLine(Phrases.Init_Test, module, cam.Address);
         }
 
-        public void TestSuccess(string cve, Camera cam, Credencial cred)
+        public void LogResult(string module, Camera cam, ExploitResult exploitResult)
         {
-            if (string.IsNullOrEmpty(cred.Username))
-                cred.Username = "{null}";
-            
-            if (string.IsNullOrEmpty(cred.Password))
-                cred.Password = "{null}";
-
-            var ms = string.Format(Phrases.Test_Success, cam.Address, cve, cred);
-            if (string.IsNullOrEmpty(cred.Message))
-                Console.WriteLine(ms);
-            else
-                Console.WriteLine(ms + " - " + cred.Message);
+            if (exploitResult.Result)
+            {
+                Console.WriteLine(exploitResult.ScreenMessage);
                 
-            _txtFile.WriteLine(string.Join(',', cam, cred.Username, cred.Password, cve, "Success",cred.Message));
-            _txtFile.Flush();
+                _txtFile.WriteLine(string.Join(',', cam, exploitResult.Credencials.Username, exploitResult.Credencials.Password, module, _vulnerable, CleanString(exploitResult.Comment)));
+                _txtFile.Flush();
+            }
+            else
+            {
+                Console.WriteLine(exploitResult.ScreenMessage);
+                
+                _txtFile.WriteLine(string.Join(',', cam, "", "", module, _notVulnerable, CleanString(exploitResult.Comment)));
+                _txtFile.Flush();
+            }
         }
 
-        public void TestFailed(string module, Camera cam, string error = "")
+        public void ExploitExecutionFailed(ExploitFailException ex)
         {
-            if (string.IsNullOrEmpty(error))
-                error = string.Format(Phrases.Test_Fail, cam.Host, module);
+            Console.WriteLine(ex.ScreenMessage);
             
-            Console.WriteLine(error);
-            
-            _txtFile.WriteLine(string.Join(',', cam, "null", "null", module, "Fail", error.Replace(',', ' ')));
+            _txtFile.WriteLine(string.Join(',', ex.Camera, "null", "null", ex.CommonName, _fail, CleanString(ex.Message)));
             _txtFile.Flush();
         }
         
-        public void TestFailedUnreachableTarget(string cve, Camera cam, string error)
+        public void ExploitExecutionFailedUnreachableTarget(ExploituUreachableTargetException ex)
         {
-            Console.WriteLine(string.Format(Phrases.IP_Camera_Is_Not_Reachable, cam.Address, cve));
+            Console.WriteLine(ex.ScreenMessage);
             
-            _txtFile.WriteLine(string.Join(',', cam, "null", "null", cve, "unreachable", error));
+            _txtFile.WriteLine(string.Join(',', ex.Camera, "null", "null", ex.CommonName, _unreachable, CleanString(ex.ScreenMessage)));
             _txtFile.Flush();
+        }
+
+        /// <summary>
+        /// Remove some problematic characters, to writte the messages in csv files
+        /// </summary>
+        private string CleanString(string toClean)
+        {
+            return toClean.Replace(',', ' ').Replace('\n', ' ');
         }
     }
 }

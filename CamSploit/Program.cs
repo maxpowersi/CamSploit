@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using CommandLine;
 using ExploitMaker;
+using ExploitMaker.Cam;
 using ExploitMaker.Exceptions;
-using ExploitMaker.Helpers;
+using ExploitMaker.Modules;
 
 namespace CamSploit
 {
     public static class Program
     {
+        private const string InvalidMainAction = "Invalid main action, plase select one of the following actions: rhost, list-rhost, shodan-file or show-exploit";
+
+        private const string InvalidCommonName = "The entered exploit was not found";
+        
         private static void Main(string[] args)
         {
             try
@@ -38,65 +43,60 @@ namespace CamSploit
                 else
                 {
                     var exploit = ExploitHelper.GetExploit(opts.ShowExploit);
-                    desc = exploit == null ? Phrases.Invalid_Common_Name : exploit.Description;
+                    desc = exploit == null ? InvalidCommonName : exploit.Description;
                 }
 
                 Console.WriteLine(desc);
                 return;
             }
-            
+
             using (var writter = new Writter(opts.Output))
             {
-                ExploitHelper.InitWritter(writter);
+                IEnumerable<Camera> cams = null;
+                
+                switch (opts.GetInputType())
                 {
-                    IEnumerable<Camera> cams = null;
-                    switch (opts.GetInputType())
+                    case InputType.SingleHost:
+                        cams = CamLoader.LoadFromHost(opts.SingleHost);
+                        break;
+                    case InputType.ListHost:
+                        cams = CamLoader.LoadFromTextFile(opts.ListHost);
+                        break;
+                    case InputType.Shodan:
+                        cams = CamLoader.LoadFromShodanJsonFile(opts.ShodanFile);
+                        break;
+                    case InputType.None:
+                        throw new
+                            ErrorException(InvalidMainAction);
+                }
+
+                var exploits = opts.Exploits != null && opts.Exploits.Any()
+                    ? ExploitHelper.GetExploits(opts.Exploits)
+                    : ExploitHelper.GetAll();
+
+                if (cams == null)
+                    return;
+
+                var enumerable = exploits as Module[] ?? exploits.ToArray();
+                foreach (var cam in cams)
+                {
+                    foreach (var e in enumerable)
                     {
-                        case InputType.SingleHost:
-                            cams = CamLoader.LoadFromHost(opts.SingleHost);
-                            break;
-                        case InputType.ListHost:
-                            cams = CamLoader.LoadFromTextFile(opts.ListHost);
-                            break;
-                        case InputType.Shodan:
-                            cams = CamLoader.LoadFromShodanJsonFile(opts.ShodanFile);
-                            break;
-                        case InputType.None:
-                            throw new 
-                                ErrorException(Phrases.Invalid_Main_Action);
-                    }
-
-                    var exploits = opts.Exploits != null && opts.Exploits.Any()
-                        ? ExploitHelper.GetExploits(opts.Exploits)
-                        : ExploitHelper.GetAll();
-
-                    if (cams == null)
-                        return;
-
-                    var enumerable = exploits as Exploit[] ?? exploits.ToArray();
-                    foreach (var cam in cams)
-                    {
-                        foreach (var e in enumerable)
+                        try
                         {
-                            try
-                            {
-                                ExploitHelper.Writter.InitTest(e.CommonName, cam);
-                                
-                                var cred = e.Run(cam);
-                                
-                                if(cred != null)
-                                    ExploitHelper.Writter.TestSuccess(e.CommonName, cam, cred);
-                                else
-                                    ExploitHelper.Writter.TestFailed(e.CommonName, cam);
-                            }
-                            catch (ExploitFailException ex)
-                            {
-                                ExploitHelper.Writter.TestFailed(ex.CommonName, ex.Camera, ex.Message);
-                            }
-                            catch (ExploituUreachableTargetException ex)
-                            {
-                                ExploitHelper.Writter.TestFailedUnreachableTarget(ex.CommonName, ex.Camera, ex.Message);
-                            }
+                            writter.InitTest(e.CommonName, cam);
+
+                            var exploitResult = e.Run(cam);
+
+                            writter.LogResult(e.CommonName, cam, exploitResult);
+                        }
+                        catch (ExploitFailException ex)
+                        {
+                            writter.ExploitExecutionFailed(ex);
+                        }
+                        catch (ExploituUreachableTargetException ex)
+                        {
+                            writter.ExploitExecutionFailedUnreachableTarget(ex);
                         }
                     }
                 }
