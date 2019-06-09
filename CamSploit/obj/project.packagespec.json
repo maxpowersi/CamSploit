@@ -1,0 +1,52 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\Max Berrutto\\Documents\\Github\\CamSploit\\CamSploit\\CamSploit.csproj",
+    "projectName": "CamSploit",
+    "projectPath": "C:\\Users\\Max Berrutto\\Documents\\Github\\CamSploit\\CamSploit\\CamSploit.csproj",
+    "outputPath": "C:\\Users\\Max Berrutto\\Documents\\Github\\CamSploit\\CamSploit\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "C:\\Users\\Max Berrutto\\Documents\\Github\\CamSploit\\ExploitMaker\\ExploitMaker.csproj": {
+            "projectPath": "C:\\Users\\Max Berrutto\\Documents\\Github\\CamSploit\\ExploitMaker\\ExploitMaker.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  },
+  "runtimes": {
+    "": {
+      "#import": []
+    },
+    "win-x64": {
+      "#import": []
+    }
+  }
+}
